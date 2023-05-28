@@ -42,6 +42,7 @@ public class VentaDAO {
             resultado = prepareStmt.executeUpdate();
             conectar.close();
             prepareStmt.close();
+            JOptionPane.showMessageDialog(null, "Venta creada exitosamente");
             
         } catch (SQLException e) {
             System.out.println(e.getMessage());
@@ -105,10 +106,11 @@ public class VentaDAO {
             resultado = prepareStmt.executeUpdate();
             conectar.close();
             prepareStmt.close();
+            JOptionPane.showMessageDialog(null, "Venta actualizada exitosamente");
             
         } catch (SQLException e) {
             System.out.println(e.getMessage());
-            JOptionPane.showMessageDialog(null, "Error SQL modificando la venta");
+            JOptionPane.showMessageDialog(null, "Error SQL actualizando la venta");
         }
         return resultado;
     }
@@ -123,6 +125,7 @@ public class VentaDAO {
             resultado = prepareStmt.executeUpdate();
             conectar.close();
             prepareStmt.close();
+            JOptionPane.showMessageDialog(null, "Venta borrada exitosamente");
             
         } catch (SQLException e) {
             System.out.println(e.getMessage());

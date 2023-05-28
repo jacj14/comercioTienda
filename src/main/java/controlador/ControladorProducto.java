@@ -2,7 +2,6 @@ package controlador;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import javax.swing.JOptionPane;
 import modelo.dao.ProductoDAO;
 import modelo.dto.ProductoDTO;
 import vista.VistaProducto;
@@ -53,7 +52,6 @@ public class ControladorProducto implements ActionListener {
             p.setPrecio_u(Float.valueOf(this.VistaProducto.tf_precioProducto.getText()));
             
             producto.update(p);
-            JOptionPane.showMessageDialog(null, "Producto actualizado exitosamente");
         }
         
         //Borrar un producto
@@ -61,7 +59,6 @@ public class ControladorProducto implements ActionListener {
             int codigo = Integer.valueOf(this.VistaProducto.tf_codigoProducto.getText());
             
             producto.delete(codigo);
-            JOptionPane.showMessageDialog(null, "Producto borrado exitosamente");
         }
         
         //Mostrar producto

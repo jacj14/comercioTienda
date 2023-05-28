@@ -36,6 +36,7 @@ public class VendedorDAO {
             resultado = prepareStmt.executeUpdate();
             conectar.close();
             prepareStmt.close();
+            JOptionPane.showMessageDialog(null, "Vendedor creado exitosamente");
             
         } catch (SQLException e) {
             System.out.println(e.getMessage());
@@ -88,10 +89,11 @@ public class VendedorDAO {
             resultado = prepareStmt.executeUpdate();
             conectar.close();
             prepareStmt.close();
+            JOptionPane.showMessageDialog(null, "Vendedor actualizado exitosamente");
             
         } catch (SQLException e) {
             System.out.println(e.getMessage());
-            JOptionPane.showMessageDialog(null, "Error SQL modificando el vendedor");
+            JOptionPane.showMessageDialog(null, "Error SQL actualizando el vendedor");
         }
         return resultado;
     }
@@ -106,10 +108,11 @@ public class VendedorDAO {
             resultado = prepareStmt.executeUpdate();
             conectar.close();
             prepareStmt.close();
+            JOptionPane.showMessageDialog(null, "Vendedor borrado exitosamente");
             
         } catch (SQLException e) {
             System.out.println(e.getMessage());
-            JOptionPane.showMessageDialog(null, "Error SQL eliminando el vendedor");
+            JOptionPane.showMessageDialog(null, "Error SQL borrando el vendedor");
         }
         return resultado;
     
@@ -120,14 +123,14 @@ public class VendedorDAO {
         
            try {
             conectar = Conexion.establecerConexion();
-            String selectSQL = "SELECT * FROM cliente";
+            String selectSQL = "SELECT * FROM vendedor";
             prepareStmt = conectar.prepareStatement(selectSQL);
             resultSet = prepareStmt.executeQuery();
             VendedorDTO vendedor;
                         
             while(resultSet.next()){
                 vendedor = new VendedorDTO();
-                vendedor.setCod_vendedor(resultSet.getInt("cod_cliente"));
+                vendedor.setCod_vendedor(resultSet.getInt("cod_vendedor"));
                 vendedor.setNombre(resultSet.getString("nombre"));
                 vendedor.setApellido(resultSet.getString("apellido"));
                 vendedor.setTelefono(resultSet.getInt("telefono"));
@@ -140,7 +143,7 @@ public class VendedorDAO {
             
         } catch (SQLException e) {
             System.out.println(e.getMessage());
-            JOptionPane.showMessageDialog(null, "Error SQL consultando el cliente");
+            JOptionPane.showMessageDialog(null, "Error SQL consultando los vendedores");
         }
         return listaVendedor;
     

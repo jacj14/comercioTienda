@@ -37,7 +37,7 @@ public class ProductoDAO {
             resultado = prepareStmt.executeUpdate();
             conectar.close();
             prepareStmt.close();
-            JOptionPane.showMessageDialog(null, "Producto guardado exitosamente");
+            JOptionPane.showMessageDialog(null, "Producto creado exitosamente");
             
         } catch (SQLException e) {
             System.out.println(e.getMessage());
@@ -92,10 +92,11 @@ public class ProductoDAO {
             resultado = prepareStmt.executeUpdate();
             conectar.close();
             prepareStmt.close();
+            JOptionPane.showMessageDialog(null, "Producto actualizado exitosamente");
             
         } catch (SQLException e) {
             System.out.println(e.getMessage());
-            JOptionPane.showMessageDialog(null, "Error SQL modificando el producto");
+            JOptionPane.showMessageDialog(null, "Error SQL actualizando el producto");
         }
         return resultado;
     }
@@ -110,10 +111,11 @@ public class ProductoDAO {
             resultado = prepareStmt.executeUpdate();
             conectar.close();
             prepareStmt.close();
+            JOptionPane.showMessageDialog(null, "Producto borrado exitosamente");
             
         } catch (SQLException e) {
             System.out.println(e.getMessage());
-            JOptionPane.showMessageDialog(null, "Error SQL eliminando el producto");
+            JOptionPane.showMessageDialog(null, "Error SQL borrando el producto");
         }
         return resultado;
     
@@ -145,7 +147,7 @@ public class ProductoDAO {
             
         } catch (SQLException e) {
             System.out.println(e.getMessage());
-            JOptionPane.showMessageDialog(null, "Error SQL consultando el producto");
+            JOptionPane.showMessageDialog(null, "Error SQL consultando los productos");
         }
         return listaProducto;
     

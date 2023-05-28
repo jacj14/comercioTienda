@@ -6,7 +6,6 @@ package controlador;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import javax.swing.JOptionPane;
 import modelo.dao.VentaDAO;
 import modelo.dto.VentaDTO;
 import vista.VistaVenta;
@@ -48,7 +47,6 @@ public class ControladorVenta implements ActionListener{
 
             
             venta.create(vta);
-            JOptionPane.showMessageDialog(null, "Venta guardada exitosamente");
         }
         
         //Actualizar una venta
@@ -66,7 +64,6 @@ public class ControladorVenta implements ActionListener{
             vta.setForm_pago(Integer.valueOf(this.VistaVenta.tf_pagoVentas.getText()));
             
             venta.update(vta);
-            JOptionPane.showMessageDialog(null, "Venta actualizada exitosamente");
         }
         
         //Borrar una venta
@@ -74,7 +71,6 @@ public class ControladorVenta implements ActionListener{
             int codigo = Integer.valueOf(this.VistaVenta.tf_codigoVenta.getText());
             
             venta.delete(codigo);
-            JOptionPane.showMessageDialog(null, "Venta borrada exitosamente");
         }
         
         //Mostrar una venta

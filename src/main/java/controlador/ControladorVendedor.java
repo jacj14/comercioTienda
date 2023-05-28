@@ -2,7 +2,6 @@ package controlador;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import javax.swing.JOptionPane;
 import modelo.dao.VendedorDAO;
 import modelo.dto.VendedorDTO;
 import vista.VistaVendedor;
@@ -39,7 +38,6 @@ public class ControladorVendedor implements ActionListener{
             v.setTelefono(Integer.valueOf(this.VistaVendedor.tf_telefonoVendedor.getText()));
             
             vendedor.create(v);
-            JOptionPane.showMessageDialog(null, "Cliente guardado exitosamente");
         }
         
         //Actualizar vendedor
@@ -51,7 +49,6 @@ public class ControladorVendedor implements ActionListener{
             v.setTelefono(Integer.valueOf(this.VistaVendedor.tf_telefonoVendedor.getText()));
             
             vendedor.update(v);
-            JOptionPane.showMessageDialog(null, "Cliente actualizado exitosamente");
         }
         
         //Borrar vendedor
@@ -59,7 +56,6 @@ public class ControladorVendedor implements ActionListener{
             int codigo = Integer.valueOf(this.VistaVendedor.tf_codigoVendedor.getText());
             
             vendedor.delete(codigo);
-            JOptionPane.showMessageDialog(null, "Cliente borrado exitosamente");
         }
         
         // Mostrar vendedor
