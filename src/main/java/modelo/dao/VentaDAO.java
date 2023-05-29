@@ -33,10 +33,11 @@ public class VentaDAO {
             prepareStmt.setInt(3, venta.getDia());
             prepareStmt.setInt(4, venta.getMes());
             prepareStmt.setInt(5, venta.getAnio());
-            prepareStmt.setInt(6, venta.getId_vendedor());
-            prepareStmt.setInt(7, venta.getId_cliente());
-            prepareStmt.setInt(8, venta.getCod_prod_vendido());
-            prepareStmt.setInt(9, venta.getForm_pago());
+            prepareStmt.setInt(6, venta.getId_cliente());
+            prepareStmt.setInt(7, venta.getId_vendedor());
+            prepareStmt.setInt(8, venta.getForm_pago());
+            prepareStmt.setInt(9, venta.getCod_prod_vendido());
+            
             
             
             resultado = prepareStmt.executeUpdate();

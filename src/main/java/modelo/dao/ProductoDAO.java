@@ -62,7 +62,7 @@ public class ProductoDAO {
                 producto.setNombre(resultSet.getString("nombre"));
                 producto.setDescripcion(resultSet.getString("descripcion"));
                 producto.setCan_actual(resultSet.getInt("can_actual"));
-                producto.setPrecio_u(resultSet.getFloat("precio"));
+                producto.setPrecio_u(resultSet.getFloat("precio_u"));
                 
             conectar.close();
             prepareStmt.close();

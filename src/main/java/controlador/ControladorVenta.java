@@ -40,10 +40,11 @@ public class ControladorVenta implements ActionListener{
             vta.setDia(Integer.valueOf(this.VistaVenta.tf_diaVentas.getText()));
             vta.setMes(Integer.valueOf(this.VistaVenta.tf_mesVentas.getText()));
             vta.setAnio(Integer.valueOf(this.VistaVenta.tf_anioVentas.getText()));
-            vta.setId_vendedor(Integer.valueOf(this.VistaVenta.tf_idVendedorVentas.getText()));
             vta.setId_cliente(Integer.valueOf(this.VistaVenta.tf_idCliente_ventas.getText()));
-            vta.setCod_prod_vendido(Integer.valueOf(this.VistaVenta.tf_codProdVentas.getText()));
+            vta.setId_vendedor(Integer.valueOf(this.VistaVenta.tf_idVendedorVentas.getText()));
             vta.setForm_pago(Integer.valueOf(this.VistaVenta.tf_pagoVentas.getText()));
+            vta.setCod_prod_vendido(Integer.valueOf(this.VistaVenta.tf_codProdVentas.getText()));
+            
 
             
             venta.create(vta);
@@ -58,10 +59,10 @@ public class ControladorVenta implements ActionListener{
             vta.setDia(Integer.valueOf(this.VistaVenta.tf_diaVentas.getText()));
             vta.setMes(Integer.valueOf(this.VistaVenta.tf_mesVentas.getText()));
             vta.setAnio(Integer.valueOf(this.VistaVenta.tf_anioVentas.getText()));
-            vta.setId_vendedor(Integer.valueOf(this.VistaVenta.tf_idVendedorVentas.getText()));
             vta.setId_cliente(Integer.valueOf(this.VistaVenta.tf_idCliente_ventas.getText()));
-            vta.setCod_prod_vendido(Integer.valueOf(this.VistaVenta.tf_codProdVentas.getText()));
+            vta.setId_vendedor(Integer.valueOf(this.VistaVenta.tf_idVendedorVentas.getText()));
             vta.setForm_pago(Integer.valueOf(this.VistaVenta.tf_pagoVentas.getText()));
+            vta.setCod_prod_vendido(Integer.valueOf(this.VistaVenta.tf_codProdVentas.getText()));
             
             venta.update(vta);
         }
