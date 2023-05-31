@@ -73,7 +73,6 @@ public class ControladorProducto implements ActionListener {
             this.VistaProducto.tf_descProducto.setText(p.getDescripcion());
             this.VistaProducto.tf_nombreProducto.setText(p.getNombre());
             this.VistaProducto.tf_precioProducto.setText(String.valueOf(p.getPrecio_u()));
-            //OJO ESTÁ PENDIENTE PODER MOSTRAR LA INFORMACIÓN EN FORULARIO
         }
         
         //Mostrar todos los productos

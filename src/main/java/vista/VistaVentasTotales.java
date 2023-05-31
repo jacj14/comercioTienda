@@ -28,23 +28,9 @@ public class VistaVentasTotales extends javax.swing.JFrame {
 
         btn_homeVentasTotales = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
-        tf_diaDesdeVT = new javax.swing.JTextField();
-        tf_mesDesdeVT = new javax.swing.JTextField();
-        tf_anioDesdeVT = new javax.swing.JTextField();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
-        tf_diaHastaVT1 = new javax.swing.JTextField();
-        tf_mesHastaVT1 = new javax.swing.JTextField();
-        tf_anioHastaVT1 = new javax.swing.JTextField();
-        btn_buscar_ventasTotales = new javax.swing.JButton();
+        btn_mostrar_ventasTotales = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("Ventas Totales");
@@ -60,52 +46,14 @@ public class VistaVentasTotales extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel1.setText("Ventas Totales");
 
-        jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel2.setText("Desde");
-
-        jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel4.setText("Dia");
-
-        jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel5.setText("Mes");
-
-        jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel6.setText("Año");
-
-        tf_diaDesdeVT.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
-        tf_diaDesdeVT.setForeground(new java.awt.Color(204, 204, 204));
-        tf_diaDesdeVT.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        tf_diaDesdeVT.setText("DD");
-
-        tf_mesDesdeVT.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
-        tf_mesDesdeVT.setForeground(new java.awt.Color(204, 204, 204));
-        tf_mesDesdeVT.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        tf_mesDesdeVT.setText("MM");
-        tf_mesDesdeVT.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                tf_mesDesdeVTActionPerformed(evt);
-            }
-        });
-
-        tf_anioDesdeVT.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
-        tf_anioDesdeVT.setForeground(new java.awt.Color(204, 204, 204));
-        tf_anioDesdeVT.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        tf_anioDesdeVT.setText("AAAA");
-
-        jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel3.setText("Hasta");
-
-        jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel7.setText("Dia");
-
-        jLabel8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel8.setText("Mes");
-
-        jLabel9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel9.setText("Año");
-
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
                 {null, null, null, null, null, null},
                 {null, null, null, null, null, null},
                 {null, null, null, null, null, null},
@@ -117,28 +65,13 @@ public class VistaVentasTotales extends javax.swing.JFrame {
         ));
         jScrollPane1.setViewportView(jTable1);
 
-        tf_diaHastaVT1.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
-        tf_diaHastaVT1.setForeground(new java.awt.Color(204, 204, 204));
-        tf_diaHastaVT1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        tf_diaHastaVT1.setText("DD");
-
-        tf_mesHastaVT1.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
-        tf_mesHastaVT1.setForeground(new java.awt.Color(204, 204, 204));
-        tf_mesHastaVT1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        tf_mesHastaVT1.setText("MM");
-        tf_mesHastaVT1.addActionListener(new java.awt.event.ActionListener() {
+        btn_mostrar_ventasTotales.setBackground(new java.awt.Color(161, 251, 225));
+        btn_mostrar_ventasTotales.setText("Mostrar");
+        btn_mostrar_ventasTotales.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                tf_mesHastaVT1ActionPerformed(evt);
+                btn_mostrar_ventasTotalesActionPerformed(evt);
             }
         });
-
-        tf_anioHastaVT1.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
-        tf_anioHastaVT1.setForeground(new java.awt.Color(204, 204, 204));
-        tf_anioHastaVT1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        tf_anioHastaVT1.setText("AAAA");
-
-        btn_buscar_ventasTotales.setBackground(new java.awt.Color(161, 251, 225));
-        btn_buscar_ventasTotales.setText("Buscar");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -146,51 +79,15 @@ public class VistaVentasTotales extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(16, 16, 16)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 513, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(btn_homeVentasTotales)
-                        .addGap(128, 128, 128)
-                        .addComponent(jLabel1)))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(btn_mostrar_ventasTotales)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 513, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGroup(layout.createSequentialGroup()
+                            .addComponent(btn_homeVentasTotales)
+                            .addGap(128, 128, 128)
+                            .addComponent(jLabel1))))
                 .addContainerGap(21, Short.MAX_VALUE))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(42, 42, 42)
-                .addComponent(jLabel2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(tf_diaDesdeVT, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(tf_mesDesdeVT, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(tf_anioDesdeVT, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jLabel3)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(21, 21, 21)
-                                .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(tf_diaHastaVT1, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(tf_mesHastaVT1, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(tf_anioHastaVT1, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(49, 49, 49))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(23, 23, 23)
-                        .addComponent(btn_buscar_ventasTotales)
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -200,35 +97,10 @@ public class VistaVentasTotales extends javax.swing.JFrame {
                     .addComponent(btn_homeVentasTotales, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel1))
                 .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel4)
-                            .addComponent(jLabel5)
-                            .addComponent(jLabel6))
-                        .addGap(4, 4, 4)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel2)
-                            .addComponent(tf_diaDesdeVT, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(tf_mesDesdeVT, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(tf_anioDesdeVT, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel7)
-                            .addComponent(jLabel8)
-                            .addComponent(jLabel9))
-                        .addGap(4, 4, 4)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                .addComponent(tf_diaHastaVT1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(tf_mesHastaVT1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(tf_anioHastaVT1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(jLabel3))))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 25, Short.MAX_VALUE)
-                .addComponent(btn_buscar_ventasTotales)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 267, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 227, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(34, 34, 34))
+                .addComponent(btn_mostrar_ventasTotales)
+                .addContainerGap(22, Short.MAX_VALUE))
         );
 
         pack();
@@ -238,13 +110,9 @@ public class VistaVentasTotales extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_btn_homeVentasTotalesActionPerformed
 
-    private void tf_mesDesdeVTActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tf_mesDesdeVTActionPerformed
+    private void btn_mostrar_ventasTotalesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_mostrar_ventasTotalesActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_tf_mesDesdeVTActionPerformed
-
-    private void tf_mesHastaVT1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tf_mesHastaVT1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_tf_mesHastaVT1ActionPerformed
+    }//GEN-LAST:event_btn_mostrar_ventasTotalesActionPerformed
 
     /**
      * @param args the command line arguments
@@ -282,24 +150,10 @@ public class VistaVentasTotales extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    public javax.swing.JButton btn_buscar_ventasTotales;
     public javax.swing.JButton btn_homeVentasTotales;
+    public javax.swing.JButton btn_mostrar_ventasTotales;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable jTable1;
-    public javax.swing.JTextField tf_anioDesdeVT;
-    public javax.swing.JTextField tf_anioHastaVT1;
-    public javax.swing.JTextField tf_diaDesdeVT;
-    public javax.swing.JTextField tf_diaHastaVT1;
-    public javax.swing.JTextField tf_mesDesdeVT;
-    public javax.swing.JTextField tf_mesHastaVT1;
     // End of variables declaration//GEN-END:variables
 }

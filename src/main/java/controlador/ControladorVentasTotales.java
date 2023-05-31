@@ -13,7 +13,7 @@ public class ControladorVentasTotales implements ActionListener{
 
     public ControladorVentasTotales(VistaVentasTotales VistaVentasTotales) {
         this.VistaVentasTotales = VistaVentasTotales;
-        this.VistaVentasTotales.btn_buscar_ventasTotales.addActionListener(this);
+        this.VistaVentasTotales.btn_mostrar_ventasTotales.addActionListener(this);
         this.VistaVentasTotales.btn_homeVentasTotales.addActionListener(this); //Pendiente por determinar si se deja o no esta opción
         this.VistaVentasTotales.setVisible(true);
     }

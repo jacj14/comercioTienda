@@ -54,13 +54,18 @@ public class ControladorCliente implements ActionListener{
             
             cliente.delete(codigo);
         }
+        //OJO REVISAR QUE ESTE FUNCIONANDO!!!
         //Mostrar un cliente
         if (e.getSource().equals(this.VistaCliente.btn_buscarCliente)) {
             int codigo = Integer.valueOf(this.VistaCliente.tf_codigoCliente.getText());
+            ClienteDTO c = new ClienteDTO();
+            c = cliente.read(codigo);
             
-            cliente.read(codigo);
-            //OJO ESTÁ PENDIENTE PODER MOSTRAR LA INFORMACIÓN EN FORULARIO
-            
+            this.VistaCliente.tf_codigoCliente.setText(Integer.toString(c.getCod_cliente()));
+            this.VistaCliente.tf_nombreCliente.setText(c.getNombre());
+            this.VistaCliente.tf_apellidoCliente.setText(c.getApellido());
+            this.VistaCliente.tf_telefonoCliente.setText(Integer.toString(c.getTelefono()));
+ 
         }
     }
 

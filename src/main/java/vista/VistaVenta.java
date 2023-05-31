@@ -240,25 +240,25 @@ public class VistaVenta extends javax.swing.JFrame {
 
         t_catalogoVentas.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null}
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null}
             },
             new String [] {
-                "Código", "Nombre", "Cantidad", "Precio"
+                "Producto", "Cantidad", "Precio Total"
             }
         ));
         jScrollPane1.setViewportView(t_catalogoVentas);
 
         jLabel8.setFont(new java.awt.Font("Helvetica Neue", 1, 24)); // NOI18N
-        jLabel8.setText("Catálgo Productos");
+        jLabel8.setText("Tiquete de Compra");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -363,7 +363,7 @@ public class VistaVenta extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JTextField jTextField3;
-    private javax.swing.JTable t_catalogoVentas;
+    public javax.swing.JTable t_catalogoVentas;
     public javax.swing.JTextField tf_anioVentas;
     public javax.swing.JTextField tf_cantVentas;
     public javax.swing.JTextField tf_codProdVentas;
